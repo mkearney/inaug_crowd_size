@@ -2,14 +2,12 @@
 ## http://www.politifact.com/truth-o-meter/article/2017/jan/20/inaugural-crowd-sizes-ranked/
 df <- data.frame(
     year = seq(1989, 2017, 4),
-    endyear = seq(1992, 2020, 4),
     president = c("Bush I", "Clinton", "Clinton",
                   "Bush", "Bush", "Obama", "Obama", "Trump"),
     party = c("R", "D", "D", "R", "R", "D", "D", "R"),
     term = c(1, 1, 2, 1, 2, 1, 2, 1),
     inaug.size = c(300000, 800000, 250000, 300000, 400000,
-                   1800000, 1000000, 250000),
-    inaug.min = rep(0, 8)
+                   1800000, 1000000, 250000)
 )
 
 ## load ggplot2
