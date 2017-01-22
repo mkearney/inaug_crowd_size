@@ -4,9 +4,11 @@ Script used to generate plots included below and saved in `inaugsize.R` file.
 
 ![](inaugsize.png)
 
+## Metro Ridership Plot
+
 ![](metroride.png)
 
-## Inaugural crowd size code
+## Inaugural Crowd Size code
 
 ```{r}
 ## data from politifact link here:
@@ -50,7 +52,7 @@ ggplot(df, aes(year, inaug.size, fill = party)) +
 ```
 
 
-## Metro ridership code
+## Metro Ridership Code
 
 ```{r}
 ## metro ridership data as reported by @wmata twitter feed
@@ -86,8 +88,8 @@ ggplot(metro, aes(x = event, y = ridership, fill = event)) +
     scale_y_continuous(
         breaks = seq(0, 600000, 150000),
         labels = c("0", "150k", "300k", "450k", "600k")) +
-    labs(x = "", y = "Metro Ridership at 11am",
-         title = "Metro Ridership of DC inaugurals and #WomensMarch",
+    labs(x = "", y = "Metro ridership at 11am",
+         title = "Metro Ridership of Inaugurations and #WomensMarch",
          subtitle = paste0(
              "Estimates reported by @wmata the official ",
              "feed of Metro/WMATA"))
