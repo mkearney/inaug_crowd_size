@@ -19,13 +19,14 @@ library(ggplot2)
 ggplot(df, aes(year, inaug.size, fill = party)) +
     geom_bar(stat = "identity") +
     theme_minimal() +
-    theme(text = element_text(family = "Avenir"),
+    theme(text = element_text(family = "Avenir Next Condensed"),
+          plot.title = element_text(face = "bold", size = 18),
           legend.position = "none",
           axis.text.x = element_text(
               color = "black", size = 10)) +
     scale_fill_manual(values = c("#003399", "#aa3333")) +
     scale_x_continuous(
-        breaks = seq(1990.5, 2018.5, 4),
+        breaks = seq(1989, 2017, 4),
         labels = c("Bush I", "Clinton", "Clinton", "Bush",
                    "Bush", "Obama", "Obama", "Trump")) +
     scale_y_continuous(
