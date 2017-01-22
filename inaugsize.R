@@ -70,8 +70,8 @@ ggplot(metro, aes(x = event, y = ridership, fill = event)) +
         breaks = seq(0, 600000, 150000),
         labels = c("0", "150k", "300k", "450k", "600k")) +
     labs(x = "", y = "Metro Ridership at 11am",
-         title = "Metro Ridership of DC inaugurals and #WomensMarch",
+         title = "Metro Ridership of inaugurations and #WomensMarch",
          subtitle = paste0(
              "Estimates reported by @wmata the official ",
-             "feed of Metro/WMATA"))
+             "feed of DC Metro/WMATA"))
 ## dev.off()
